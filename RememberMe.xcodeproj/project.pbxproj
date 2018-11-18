@@ -97,10 +97,9 @@
 		0271FB7421A144C0009066DE /* RememberMe */ = {
 			isa = PBXGroup;
 			children = (
-				0271FB7521A144C0009066DE /* AppDelegate.swift */,
-				0271FB7721A144C0009066DE /* ViewController.swift */,
+				0271FBA321A144EB009066DE /* Classes */,
+				0271FBA421A14500009066DE /* Resources */,
 				0271FB7921A144C0009066DE /* Main.storyboard */,
-				0271FB7C21A144C2009066DE /* Assets.xcassets */,
 				0271FB7E21A144C2009066DE /* LaunchScreen.storyboard */,
 				0271FB8121A144C2009066DE /* Info.plist */,
 			);
@@ -123,6 +122,63 @@
 				0271FB9721A144C2009066DE /* Info.plist */,
 			);
 			path = RememberMeUITests;
+			sourceTree = "<group>";
+		};
+		0271FBA321A144EB009066DE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0271FBA921A145AB009066DE /* ViewModels */,
+				0271FBA821A145A4009066DE /* Models */,
+				0271FBA721A14596009066DE /* ViewControllers */,
+				0271FBA621A14585009066DE /* Views */,
+				0271FBA521A14559009066DE /* Utils */,
+				0271FB7521A144C0009066DE /* AppDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0271FBA421A14500009066DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0271FB7C21A144C2009066DE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0271FBA521A14559009066DE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0271FBA621A14585009066DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0271FBA721A14596009066DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0271FB7721A144C0009066DE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0271FBA821A145A4009066DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0271FBA921A145AB009066DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				INFOPLIST_FILE = RememberMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				INFOPLIST_FILE = RememberMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
