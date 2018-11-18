@@ -14,6 +14,12 @@
 		0271FB8021A144C2009066DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0271FB7E21A144C2009066DE /* LaunchScreen.storyboard */; };
 		0271FB8B21A144C2009066DE /* RememberMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FB8A21A144C2009066DE /* RememberMeTests.swift */; };
 		0271FB9621A144C2009066DE /* RememberMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FB9521A144C2009066DE /* RememberMeUITests.swift */; };
+		0271FBAD21A149F4009066DE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBAB21A149F4009066DE /* Logger.swift */; };
+		0271FBAE21A149F4009066DE /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBAC21A149F4009066DE /* Logging.swift */; };
+		0271FBB421A14A68009066DE /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBB021A14A68009066DE /* UIFontExtensions.swift */; };
+		0271FBB521A14A68009066DE /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBB121A14A68009066DE /* DateFormatterExtensions.swift */; };
+		0271FBB621A14A68009066DE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBB221A14A68009066DE /* UIViewControllerExtensions.swift */; };
+		0271FBB721A14A68009066DE /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBB321A14A68009066DE /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,24 @@
 		0271FB9121A144C2009066DE /* RememberMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RememberMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0271FB9521A144C2009066DE /* RememberMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberMeUITests.swift; sourceTree = "<group>"; };
 		0271FB9721A144C2009066DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0271FBAB21A149F4009066DE /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		0271FBAC21A149F4009066DE /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		0271FBB021A14A68009066DE /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		0271FBB121A14A68009066DE /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		0271FBB221A14A68009066DE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		0271FBB321A14A68009066DE /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		0271FBB921A14AB8009066DE /* TitilliumWeb-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-ExtraLight.ttf"; sourceTree = "<group>"; };
+		0271FBBA21A14AB8009066DE /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
+		0271FBBB21A14AB8009066DE /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
+		0271FBBC21A14AB9009066DE /* TitilliumWeb-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		0271FBBD21A14AB9009066DE /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
+		0271FBBE21A14AB9009066DE /* TitilliumWeb-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0271FBBF21A14AB9009066DE /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
+		0271FBC021A14AB9009066DE /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		0271FBC121A14AB9009066DE /* TitilliumWeb-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		0271FBC221A14AB9009066DE /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
+		0271FBC321A14AB9009066DE /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
+		0271FBC421A14AB9009066DE /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +151,7 @@
 		0271FBA321A144EB009066DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0271FBAF21A14A29009066DE /* Extensions */,
 				0271FBA921A145AB009066DE /* ViewModels */,
 				0271FBA821A145A4009066DE /* Models */,
 				0271FBA721A14596009066DE /* ViewControllers */,
@@ -140,6 +165,7 @@
 		0271FBA421A14500009066DE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0271FBB821A14AA7009066DE /* Fonts */,
 				0271FB7C21A144C2009066DE /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -148,6 +174,7 @@
 		0271FBA521A14559009066DE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0271FBAA21A149C7009066DE /* Logging */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -179,6 +206,45 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0271FBAA21A149C7009066DE /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				0271FBAB21A149F4009066DE /* Logger.swift */,
+				0271FBAC21A149F4009066DE /* Logging.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		0271FBAF21A14A29009066DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0271FBB121A14A68009066DE /* DateFormatterExtensions.swift */,
+				0271FBB021A14A68009066DE /* UIFontExtensions.swift */,
+				0271FBB221A14A68009066DE /* UIViewControllerExtensions.swift */,
+				0271FBB321A14A68009066DE /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0271FBB821A14AA7009066DE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0271FBC021A14AB9009066DE /* fontawesome-webfont.ttf */,
+				0271FBBA21A14AB8009066DE /* TitilliumWeb-Black.ttf */,
+				0271FBC221A14AB9009066DE /* TitilliumWeb-Bold.ttf */,
+				0271FBBE21A14AB9009066DE /* TitilliumWeb-BoldItalic.ttf */,
+				0271FBB921A14AB8009066DE /* TitilliumWeb-ExtraLight.ttf */,
+				0271FBBC21A14AB9009066DE /* TitilliumWeb-ExtraLightItalic.ttf */,
+				0271FBC421A14AB9009066DE /* TitilliumWeb-Italic.ttf */,
+				0271FBBD21A14AB9009066DE /* TitilliumWeb-Light.ttf */,
+				0271FBBB21A14AB8009066DE /* TitilliumWeb-LightItalic.ttf */,
+				0271FBC321A14AB9009066DE /* TitilliumWeb-Regular.ttf */,
+				0271FBBF21A14AB9009066DE /* TitilliumWeb-SemiBold.ttf */,
+				0271FBC121A14AB9009066DE /* TitilliumWeb-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +379,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0271FB7821A144C0009066DE /* ViewController.swift in Sources */,
+				0271FBAD21A149F4009066DE /* Logger.swift in Sources */,
+				0271FBB721A14A68009066DE /* UIViewExtensions.swift in Sources */,
+				0271FBB421A14A68009066DE /* UIFontExtensions.swift in Sources */,
 				0271FB7621A144C0009066DE /* AppDelegate.swift in Sources */,
+				0271FBB521A14A68009066DE /* DateFormatterExtensions.swift in Sources */,
+				0271FBAE21A149F4009066DE /* Logging.swift in Sources */,
+				0271FBB621A14A68009066DE /* UIViewControllerExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
