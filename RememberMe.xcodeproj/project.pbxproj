@@ -20,6 +20,8 @@
 		0271FBB521A14A68009066DE /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBB121A14A68009066DE /* DateFormatterExtensions.swift */; };
 		0271FBB621A14A68009066DE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBB221A14A68009066DE /* UIViewControllerExtensions.swift */; };
 		0271FBB721A14A68009066DE /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBB321A14A68009066DE /* UIViewExtensions.swift */; };
+		028883F021A259A700071B16 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028883EF21A259A700071B16 /* UIColorExtensions.swift */; };
+		028883F221A259FF00071B16 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028883F121A259FF00071B16 /* StringExtensions.swift */; };
 		480FBAE65A1D8FF3AC338DF1 /* Pods_RememberMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4DE4C98321C63D7F7B7FCA /* Pods_RememberMeTests.framework */; };
 		98E942C89918936FC4D9ECA3 /* Pods_RememberMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45E0D57985105F9663A5F32 /* Pods_RememberMeUITests.framework */; };
 		A95D13ED41AE584F0FEC8AE6 /* Pods_RememberMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE4204C2E1687C7E28913FC /* Pods_RememberMe.framework */; };
@@ -74,6 +76,8 @@
 		0271FBC221A14AB9009066DE /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
 		0271FBC321A14AB9009066DE /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
 		0271FBC421A14AB9009066DE /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
+		028883EF21A259A700071B16 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		028883F121A259FF00071B16 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		04D19CA4FE0A38A9AB06EAAE /* Pods-RememberMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMeTests/Pods-RememberMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0D0B40E07001CDB36FC2811B /* Pods-RememberMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMeTests/Pods-RememberMeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D2A6709A68A2C1A6910A96D /* Pods-RememberMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMeUITests/Pods-RememberMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +245,8 @@
 				0271FBB021A14A68009066DE /* UIFontExtensions.swift */,
 				0271FBB221A14A68009066DE /* UIViewControllerExtensions.swift */,
 				0271FBB321A14A68009066DE /* UIViewExtensions.swift */,
+				028883EF21A259A700071B16 /* UIColorExtensions.swift */,
+				028883F121A259FF00071B16 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -499,7 +505,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028883F021A259A700071B16 /* UIColorExtensions.swift in Sources */,
 				0271FB7821A144C0009066DE /* ViewController.swift in Sources */,
+				028883F221A259FF00071B16 /* StringExtensions.swift in Sources */,
 				0271FBAD21A149F4009066DE /* Logger.swift in Sources */,
 				0271FBB721A14A68009066DE /* UIViewExtensions.swift in Sources */,
 				0271FBB421A14A68009066DE /* UIFontExtensions.swift in Sources */,
@@ -686,7 +694,10 @@
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				INFOPLIST_FILE = RememberMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DevWithLove.com.RememberMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -703,7 +714,10 @@
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				INFOPLIST_FILE = RememberMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DevWithLove.com.RememberMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -720,7 +734,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				INFOPLIST_FILE = RememberMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DevWithLove.com.RememberMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -738,7 +756,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				INFOPLIST_FILE = RememberMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DevWithLove.com.RememberMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -755,7 +777,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				INFOPLIST_FILE = RememberMeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DevWithLove.com.RememberMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -772,7 +798,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				INFOPLIST_FILE = RememberMeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DevWithLove.com.RememberMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
