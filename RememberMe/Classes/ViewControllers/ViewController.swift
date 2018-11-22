@@ -27,7 +27,6 @@ class ViewController: UIViewController {
   
   lazy var kolodaView: KolodaView = { [weak self] in
     let view = KolodaView(frame: .zero)
-    view.backgroundColor = UIColor.red
     view.delegate = self
     view.dataSource = self
     return view
@@ -51,7 +50,7 @@ class ViewController: UIViewController {
     self.tabBarController!.tabBar.layer.borderWidth = 0.50
     self.tabBarController!.tabBar.layer.borderColor = UIColor.clear.cgColor
     self.tabBarController?.tabBar.clipsToBounds = true
-    view.backgroundColor = AppColor.gray.value
+    view.backgroundColor = UIColor.gray
     view.addSubview(headerView)
     view.addSubview(kolodaView)
     headerView.addSubview(refreshButton)
@@ -80,7 +79,7 @@ extension ViewController: KolodaViewDataSource {
   }
   
   func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-    return UIImageView(image:UIImage(contentsOfFile:"card_concert")) // SwipeableCard()
+    return SwipeableCardView.View()
   }
   
   func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {

@@ -44,4 +44,9 @@ extension UIView {
     return anchors
   }
   
+  func RoundFrame(cornerRadius: CGFloat!) {
+    self.clipsToBounds = true
+    self.layer.cornerRadius = cornerRadius
+  }
+  
 }
