@@ -22,6 +22,8 @@
 		0271FBB721A14A68009066DE /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBB321A14A68009066DE /* UIViewExtensions.swift */; };
 		028883F021A259A700071B16 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028883EF21A259A700071B16 /* UIColorExtensions.swift */; };
 		028883F221A259FF00071B16 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028883F121A259FF00071B16 /* StringExtensions.swift */; };
+		02C8E99621A63D6F00A19D27 /* SwipeableCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C8E99521A63D6F00A19D27 /* SwipeableCardView.xib */; };
+		02C8E99821A648C500A19D27 /* SwipeableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8E99721A648C500A19D27 /* SwipeableCard.swift */; };
 		02D2912C21A2996F00BA0DC5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2912B21A2996F00BA0DC5 /* AppColor.swift */; };
 		480FBAE65A1D8FF3AC338DF1 /* Pods_RememberMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4DE4C98321C63D7F7B7FCA /* Pods_RememberMeTests.framework */; };
 		98E942C89918936FC4D9ECA3 /* Pods_RememberMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45E0D57985105F9663A5F32 /* Pods_RememberMeUITests.framework */; };
@@ -79,6 +81,8 @@
 		0271FBC421A14AB9009066DE /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
 		028883EF21A259A700071B16 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		028883F121A259FF00071B16 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		02C8E99521A63D6F00A19D27 /* SwipeableCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeableCardView.xib; sourceTree = "<group>"; };
+		02C8E99721A648C500A19D27 /* SwipeableCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCard.swift; sourceTree = "<group>"; };
 		02D2912B21A2996F00BA0DC5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		04D19CA4FE0A38A9AB06EAAE /* Pods-RememberMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMeTests/Pods-RememberMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0D0B40E07001CDB36FC2811B /* Pods-RememberMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMeTests/Pods-RememberMeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,11 +178,11 @@
 		0271FBA321A144EB009066DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				02C8E99421A63B7100A19D27 /* Views */,
 				0271FBAF21A14A29009066DE /* Extensions */,
 				0271FBA921A145AB009066DE /* ViewModels */,
 				0271FBA821A145A4009066DE /* Models */,
 				0271FBA721A14596009066DE /* ViewControllers */,
-				0271FBA621A14585009066DE /* Views */,
 				0271FBA521A14559009066DE /* Utils */,
 				0271FB7521A144C0009066DE /* AppDelegate.swift */,
 			);
@@ -201,13 +205,6 @@
 				0271FBAA21A149C7009066DE /* Logging */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		0271FBA621A14585009066DE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		0271FBA721A14596009066DE /* ViewControllers */ = {
@@ -270,6 +267,15 @@
 				0271FBC121A14AB9009066DE /* TitilliumWeb-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		02C8E99421A63B7100A19D27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02C8E99521A63D6F00A19D27 /* SwipeableCardView.xib */,
+				02C8E99721A648C500A19D27 /* SwipeableCard.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		02D2912A21A2995100BA0DC5 /* Color */ = {
@@ -412,6 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C8E99621A63D6F00A19D27 /* SwipeableCardView.xib in Resources */,
 				0271FB8021A144C2009066DE /* LaunchScreen.storyboard in Resources */,
 				0271FB7D21A144C2009066DE /* Assets.xcassets in Resources */,
 				0271FB7B21A144C0009066DE /* Main.storyboard in Resources */,
@@ -520,6 +527,7 @@
 				0271FB7821A144C0009066DE /* ViewController.swift in Sources */,
 				028883F221A259FF00071B16 /* StringExtensions.swift in Sources */,
 				0271FBAD21A149F4009066DE /* Logger.swift in Sources */,
+				02C8E99821A648C500A19D27 /* SwipeableCard.swift in Sources */,
 				0271FBB721A14A68009066DE /* UIViewExtensions.swift in Sources */,
 				0271FBB421A14A68009066DE /* UIFontExtensions.swift in Sources */,
 				0271FB7621A144C0009066DE /* AppDelegate.swift in Sources */,

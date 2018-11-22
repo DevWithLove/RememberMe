@@ -27,6 +27,7 @@ class ViewController: UIViewController {
   
   lazy var kolodaView: KolodaView = { [weak self] in
     let view = KolodaView(frame: .zero)
+    view.backgroundColor = UIColor.red
     view.delegate = self
     view.dataSource = self
     return view
@@ -52,6 +53,7 @@ class ViewController: UIViewController {
     self.tabBarController?.tabBar.clipsToBounds = true
     view.backgroundColor = AppColor.gray.value
     view.addSubview(headerView)
+    view.addSubview(kolodaView)
     headerView.addSubview(refreshButton)
     addViewConstraints()
   }
@@ -59,21 +61,35 @@ class ViewController: UIViewController {
   private func addViewConstraints() {
     _ = headerView.anchor(view.safeAreaLayoutGuide.topAnchor, left: view.safeAreaLayoutGuide.leftAnchor, bottom: nil, right: view.safeAreaLayoutGuide.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 50)
     _ = refreshButton.anchor(headerView.topAnchor, left: nil, bottom: headerView.bottomAnchor, right: headerView.rightAnchor, topConstant: 5, leftConstant: 0, bottomConstant: 5, rightConstant: 10, widthConstant: 30, heightConstant: 0)
+    _ = kolodaView.anchor(headerView.bottomAnchor, left: headerView.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: headerView.rightAnchor, topConstant: 10, leftConstant: 20, bottomConstant: 50, rightConstant: 20, widthConstant: 0, heightConstant: 0)
   }
 
 }
 
 extension ViewController: KolodaViewDelegate {
+  func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
+    koloda.reloadData()
+  }
   
 }
 
 extension ViewController: KolodaViewDataSource {
+  
+  func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
+    return .fast
+  }
+  
   func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-    return UIView()
+    return UIImageView(image:UIImage(contentsOfFile:"card_concert")) // SwipeableCard()
+  }
+  
+  func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
+    return nil
+    // return Bundle.main.loadNibNamed("OverlayView", owner: self, options: nil)[0] as? OverlayView
   }
   
   func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-    return 0
+    return 5
   }
 }
 
