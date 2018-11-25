@@ -13,6 +13,7 @@ enum AppColor {
   case red
   case red_02
   case white
+  case white_02
   case yellow
   case brown
   case gray
@@ -20,7 +21,7 @@ enum AppColor {
   case green
   case custom(hex:String , alpha:Double)
   
-  var value: UIColor {
+  var color: UIColor {
     switch self {
     case .red:
       return UIColor(hexString: "#F6342F")
@@ -28,6 +29,8 @@ enum AppColor {
       return UIColor(hexString: "#D3342A")
     case .white:
       return UIColor.white
+    case .white_02:
+      return UIColor(hexString: "#F7F5F7")
     case .yellow:
       return UIColor(hexString: "#FBC438")
     case .brown:
@@ -43,8 +46,11 @@ enum AppColor {
     }
   }
   
+  var cgColor: CGColor {
+    return color.cgColor
+  }
   
   func withAlpha(_ alpha:Double) -> UIColor {
-    return self.value.withAlphaComponent(CGFloat(alpha))
+    return self.color.withAlphaComponent(CGFloat(alpha))
   }
 }

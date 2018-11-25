@@ -24,7 +24,9 @@
 		028883F221A259FF00071B16 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028883F121A259FF00071B16 /* StringExtensions.swift */; };
 		02C8E99621A63D6F00A19D27 /* SwipeableCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C8E99521A63D6F00A19D27 /* SwipeableCardView.xib */; };
 		02C8E99821A648C500A19D27 /* SwipeableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8E99721A648C500A19D27 /* SwipeableCardView.swift */; };
+		02CA36D721AA4DED00A655BA /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA36D621AA4DED00A655BA /* UIView+Constraints.swift */; };
 		02D2912C21A2996F00BA0DC5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2912B21A2996F00BA0DC5 /* AppColor.swift */; };
+		02FAABD621A7EFA800F78226 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAABD521A7EFA800F78226 /* NibView.swift */; };
 		480FBAE65A1D8FF3AC338DF1 /* Pods_RememberMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4DE4C98321C63D7F7B7FCA /* Pods_RememberMeTests.framework */; };
 		98E942C89918936FC4D9ECA3 /* Pods_RememberMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45E0D57985105F9663A5F32 /* Pods_RememberMeUITests.framework */; };
 		A95D13ED41AE584F0FEC8AE6 /* Pods_RememberMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE4204C2E1687C7E28913FC /* Pods_RememberMe.framework */; };
@@ -83,7 +85,9 @@
 		028883F121A259FF00071B16 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		02C8E99521A63D6F00A19D27 /* SwipeableCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeableCardView.xib; sourceTree = "<group>"; };
 		02C8E99721A648C500A19D27 /* SwipeableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardView.swift; sourceTree = "<group>"; };
+		02CA36D621AA4DED00A655BA /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		02D2912B21A2996F00BA0DC5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		02FAABD521A7EFA800F78226 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		04D19CA4FE0A38A9AB06EAAE /* Pods-RememberMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMeTests/Pods-RememberMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0D0B40E07001CDB36FC2811B /* Pods-RememberMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMeTests/Pods-RememberMeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D2A6709A68A2C1A6910A96D /* Pods-RememberMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RememberMeUITests/Pods-RememberMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 				0271FBB221A14A68009066DE /* UIViewControllerExtensions.swift */,
 				0271FBB321A14A68009066DE /* UIViewExtensions.swift */,
 				028883F121A259FF00071B16 /* StringExtensions.swift */,
+				02CA36D621AA4DED00A655BA /* UIView+Constraints.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			children = (
 				02C8E99521A63D6F00A19D27 /* SwipeableCardView.xib */,
 				02C8E99721A648C500A19D27 /* SwipeableCardView.swift */,
+				02FAABD521A7EFA800F78226 /* NibView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -526,6 +532,7 @@
 				028883F021A259A700071B16 /* UIColorExtensions.swift in Sources */,
 				0271FB7821A144C0009066DE /* ViewController.swift in Sources */,
 				028883F221A259FF00071B16 /* StringExtensions.swift in Sources */,
+				02CA36D721AA4DED00A655BA /* UIView+Constraints.swift in Sources */,
 				0271FBAD21A149F4009066DE /* Logger.swift in Sources */,
 				02C8E99821A648C500A19D27 /* SwipeableCardView.swift in Sources */,
 				0271FBB721A14A68009066DE /* UIViewExtensions.swift in Sources */,
@@ -533,6 +540,7 @@
 				0271FB7621A144C0009066DE /* AppDelegate.swift in Sources */,
 				0271FBB521A14A68009066DE /* DateFormatterExtensions.swift in Sources */,
 				0271FBAE21A149F4009066DE /* Logging.swift in Sources */,
+				02FAABD621A7EFA800F78226 /* NibView.swift in Sources */,
 				02D2912C21A2996F00BA0DC5 /* AppColor.swift in Sources */,
 				0271FBB621A14A68009066DE /* UIViewControllerExtensions.swift in Sources */,
 			);
