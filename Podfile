@@ -7,6 +7,7 @@ target 'RememberMe' do
 
   # Pods for RememberMe
   pod 'Koloda', '~> 4.5.1'
+  pod 'RealmSwift'
 
   target 'RememberMeTests' do
     inherit! :search_paths

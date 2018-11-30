@@ -22,6 +22,8 @@
 		0271FBB721A14A68009066DE /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FBB321A14A68009066DE /* UIViewExtensions.swift */; };
 		028883F021A259A700071B16 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028883EF21A259A700071B16 /* UIColorExtensions.swift */; };
 		028883F221A259FF00071B16 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028883F121A259FF00071B16 /* StringExtensions.swift */; };
+		028A6C6021B09F7800D0368E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028A6C5F21B09F7800D0368E /* Card.swift */; };
+		028A6C6221B0BCF100D0368E /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028A6C6121B0BCF100D0368E /* CardListViewController.swift */; };
 		02C8E99621A63D6F00A19D27 /* SwipeableCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C8E99521A63D6F00A19D27 /* SwipeableCardView.xib */; };
 		02C8E99821A648C500A19D27 /* SwipeableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8E99721A648C500A19D27 /* SwipeableCardView.swift */; };
 		02CA36D721AA4DED00A655BA /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA36D621AA4DED00A655BA /* UIView+Constraints.swift */; };
@@ -83,6 +85,8 @@
 		0271FBC421A14AB9009066DE /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
 		028883EF21A259A700071B16 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		028883F121A259FF00071B16 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		028A6C5F21B09F7800D0368E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		028A6C6121B0BCF100D0368E /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
 		02C8E99521A63D6F00A19D27 /* SwipeableCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeableCardView.xib; sourceTree = "<group>"; };
 		02C8E99721A648C500A19D27 /* SwipeableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardView.swift; sourceTree = "<group>"; };
 		02CA36D621AA4DED00A655BA /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
@@ -182,10 +186,9 @@
 		0271FBA321A144EB009066DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				028A6C5E21B09F6300D0368E /* Models */,
 				02C8E99421A63B7100A19D27 /* Views */,
 				0271FBAF21A14A29009066DE /* Extensions */,
-				0271FBA921A145AB009066DE /* ViewModels */,
-				0271FBA821A145A4009066DE /* Models */,
 				0271FBA721A14596009066DE /* ViewControllers */,
 				0271FBA521A14559009066DE /* Utils */,
 				0271FB7521A144C0009066DE /* AppDelegate.swift */,
@@ -215,22 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				0271FB7721A144C0009066DE /* ViewController.swift */,
+				028A6C6121B0BCF100D0368E /* CardListViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		0271FBA821A145A4009066DE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		0271FBA921A145AB009066DE /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		0271FBAA21A149C7009066DE /* Logging */ = {
@@ -272,6 +262,14 @@
 				0271FBC121A14AB9009066DE /* TitilliumWeb-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		028A6C5E21B09F6300D0368E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				028A6C5F21B09F7800D0368E /* Card.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		02C8E99421A63B7100A19D27 /* Views */ = {
@@ -456,11 +454,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RememberMe/Pods-RememberMe-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,10 +538,12 @@
 				0271FBAD21A149F4009066DE /* Logger.swift in Sources */,
 				02C8E99821A648C500A19D27 /* SwipeableCardView.swift in Sources */,
 				0271FBB721A14A68009066DE /* UIViewExtensions.swift in Sources */,
+				028A6C6021B09F7800D0368E /* Card.swift in Sources */,
 				0271FBB421A14A68009066DE /* UIFontExtensions.swift in Sources */,
 				0271FB7621A144C0009066DE /* AppDelegate.swift in Sources */,
 				0271FBB521A14A68009066DE /* DateFormatterExtensions.swift in Sources */,
 				0271FBAE21A149F4009066DE /* Logging.swift in Sources */,
+				028A6C6221B0BCF100D0368E /* CardListViewController.swift in Sources */,
 				02FAABD621A7EFA800F78226 /* NibView.swift in Sources */,
 				02D2912C21A2996F00BA0DC5 /* AppColor.swift in Sources */,
 				0271FBB621A14A68009066DE /* UIViewControllerExtensions.swift in Sources */,

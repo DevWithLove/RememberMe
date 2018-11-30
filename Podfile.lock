@@ -2,19 +2,29 @@ PODS:
   - Koloda (4.5.1):
     - pop (~> 1.0)
   - pop (1.0.12)
+  - Realm (3.11.0):
+    - Realm/Headers (= 3.11.0)
+  - Realm/Headers (3.11.0)
+  - RealmSwift (3.11.0):
+    - Realm (= 3.11.0)
 
 DEPENDENCIES:
   - Koloda (~> 4.5.1)
+  - RealmSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Koloda
     - pop
+    - Realm
+    - RealmSwift
 
 SPEC CHECKSUMS:
   Koloda: fc08984dc013b4d5aff3bd7265a8874e6784b5ef
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  Realm: 92f09a102692b96a9a10e9617f214f15c5ab85fc
+  RealmSwift: 5f0481cd658bb751c509314b964a35eaa264d2cf
 
-PODFILE CHECKSUM: 4763fcfd7783579ccb17b5124a2b32d12660c2a4
+PODFILE CHECKSUM: 4a486bc75f7611a6aa4650d2567dc132ffb85b3a
 
 COCOAPODS: 1.5.3
