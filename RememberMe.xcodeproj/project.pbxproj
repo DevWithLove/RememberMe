@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022FF54521B5B69700510340 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022FF54421B5B69700510340 /* AddCardViewController.swift */; };
+		022FF54721B5D45500510340 /* RoundedCornersTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022FF54621B5D45500510340 /* RoundedCornersTextField.swift */; };
+		022FF54A21B5E99500510340 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBC021A14AB9009066DE /* fontawesome-webfont.ttf */; };
+		022FF54B21B5E99500510340 /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBBA21A14AB8009066DE /* TitilliumWeb-Black.ttf */; };
+		022FF54C21B5E99500510340 /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBC221A14AB9009066DE /* TitilliumWeb-Bold.ttf */; };
+		022FF54D21B5E99500510340 /* TitilliumWeb-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBBE21A14AB9009066DE /* TitilliumWeb-BoldItalic.ttf */; };
+		022FF54E21B5E99500510340 /* TitilliumWeb-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBB921A14AB8009066DE /* TitilliumWeb-ExtraLight.ttf */; };
+		022FF54F21B5E99500510340 /* TitilliumWeb-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBBC21A14AB9009066DE /* TitilliumWeb-ExtraLightItalic.ttf */; };
+		022FF55021B5E99500510340 /* TitilliumWeb-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBC421A14AB9009066DE /* TitilliumWeb-Italic.ttf */; };
+		022FF55121B5E99500510340 /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBBD21A14AB9009066DE /* TitilliumWeb-Light.ttf */; };
+		022FF55221B5E99500510340 /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBBB21A14AB8009066DE /* TitilliumWeb-LightItalic.ttf */; };
+		022FF55321B5E99500510340 /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBC321A14AB9009066DE /* TitilliumWeb-Regular.ttf */; };
+		022FF55421B5E99500510340 /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBBF21A14AB9009066DE /* TitilliumWeb-SemiBold.ttf */; };
+		022FF55521B5E99500510340 /* TitilliumWeb-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0271FBC121A14AB9009066DE /* TitilliumWeb-SemiBoldItalic.ttf */; };
 		0271FB7621A144C0009066DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FB7521A144C0009066DE /* AppDelegate.swift */; };
 		0271FB7821A144C0009066DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FB7721A144C0009066DE /* ViewController.swift */; };
 		0271FB7B21A144C0009066DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0271FB7921A144C0009066DE /* Main.storyboard */; };
@@ -52,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		022FF54421B5B69700510340 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		022FF54621B5D45500510340 /* RoundedCornersTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersTextField.swift; sourceTree = "<group>"; };
 		0271FB7221A144C0009066DE /* RememberMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0271FB7521A144C0009066DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0271FB7721A144C0009066DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +235,7 @@
 			children = (
 				0271FB7721A144C0009066DE /* ViewController.swift */,
 				028A6C6121B0BCF100D0368E /* CardListViewController.swift */,
+				022FF54421B5B69700510340 /* AddCardViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -278,6 +295,7 @@
 				02C8E99521A63D6F00A19D27 /* SwipeableCardView.xib */,
 				02C8E99721A648C500A19D27 /* SwipeableCardView.swift */,
 				02FAABD521A7EFA800F78226 /* NibView.swift */,
+				022FF54621B5D45500510340 /* RoundedCornersTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -423,9 +441,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				02C8E99621A63D6F00A19D27 /* SwipeableCardView.xib in Resources */,
+				022FF55221B5E99500510340 /* TitilliumWeb-LightItalic.ttf in Resources */,
+				022FF54E21B5E99500510340 /* TitilliumWeb-ExtraLight.ttf in Resources */,
 				0271FB8021A144C2009066DE /* LaunchScreen.storyboard in Resources */,
+				022FF54A21B5E99500510340 /* fontawesome-webfont.ttf in Resources */,
+				022FF54C21B5E99500510340 /* TitilliumWeb-Bold.ttf in Resources */,
+				022FF54F21B5E99500510340 /* TitilliumWeb-ExtraLightItalic.ttf in Resources */,
+				022FF55121B5E99500510340 /* TitilliumWeb-Light.ttf in Resources */,
+				022FF55521B5E99500510340 /* TitilliumWeb-SemiBoldItalic.ttf in Resources */,
+				022FF55321B5E99500510340 /* TitilliumWeb-Regular.ttf in Resources */,
+				022FF55021B5E99500510340 /* TitilliumWeb-Italic.ttf in Resources */,
 				0271FB7D21A144C2009066DE /* Assets.xcassets in Resources */,
 				0271FB7B21A144C0009066DE /* Main.storyboard in Resources */,
+				022FF54D21B5E99500510340 /* TitilliumWeb-BoldItalic.ttf in Resources */,
+				022FF55421B5E99500510340 /* TitilliumWeb-SemiBold.ttf in Resources */,
+				022FF54B21B5E99500510340 /* TitilliumWeb-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,8 +572,10 @@
 				0271FBB421A14A68009066DE /* UIFontExtensions.swift in Sources */,
 				0271FB7621A144C0009066DE /* AppDelegate.swift in Sources */,
 				0271FBB521A14A68009066DE /* DateFormatterExtensions.swift in Sources */,
+				022FF54721B5D45500510340 /* RoundedCornersTextField.swift in Sources */,
 				0271FBAE21A149F4009066DE /* Logging.swift in Sources */,
 				028A6C6221B0BCF100D0368E /* CardListViewController.swift in Sources */,
+				022FF54521B5B69700510340 /* AddCardViewController.swift in Sources */,
 				02FAABD621A7EFA800F78226 /* NibView.swift in Sources */,
 				02D2912C21A2996F00BA0DC5 /* AppColor.swift in Sources */,
 				0271FBB621A14A68009066DE /* UIViewControllerExtensions.swift in Sources */,
@@ -723,7 +755,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3PHP3XA64F;
+				DEVELOPMENT_TEAM = P9DE8EBRNY;
 				INFOPLIST_FILE = RememberMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -743,7 +775,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3PHP3XA64F;
+				DEVELOPMENT_TEAM = P9DE8EBRNY;
 				INFOPLIST_FILE = RememberMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

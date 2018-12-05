@@ -20,11 +20,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZmX-SN-DZ9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="plus" id="NPq-Jo-4dT"/>
+                    <tabBarItem key="tabBarItem" title="" image="grid" id="NPq-Jo-4dT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRg-MI-pjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="772"/>
+            <point key="canvasLocation" x="482" y="867"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8lp-7q-vb9">
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqt-yZ-t4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="771"/>
+            <point key="canvasLocation" x="-194" y="867"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wOe-Hp-JWM">
@@ -55,13 +55,31 @@
                     <connections>
                         <segue destination="qNI-Tj-kHn" kind="relationship" relationship="viewControllers" id="6jI-sr-Byq"/>
                         <segue destination="bJO-mc-nY5" kind="relationship" relationship="viewControllers" id="Bsh-g1-8p8"/>
+                        <segue destination="eAT-jV-gIO" kind="relationship" relationship="viewControllers" id="jCm-Yk-77h"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMY-3y-85O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Add Card View Controller-->
+        <scene sceneID="RQj-dF-D09">
+            <objects>
+                <viewController id="eAT-jV-gIO" customClass="AddCardViewController" customModule="RememberMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcR-Zw-Rvh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7Lb-sk-fgt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="plus" id="SMJ-c2-apX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwt-Lu-7cK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="867"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="grid" width="22" height="19"/>
         <image name="home" width="22" height="21"/>
         <image name="plus" width="22" height="22"/>
     </resources>
